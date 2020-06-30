@@ -7,7 +7,7 @@ def get_arguments():
     passed_option.add_option("-i", "--interface", dest="interface", help="interface to be changed(MAC address)")
     passed_option.add_option("-m", "--mac", dest="new_mac", help="new MAC address)")
     (value, option) =passed_option.parse_args()
-    if not value.interfac:
+    if not value.interface:
         passed_option.error("Enter the interface,use --help for further details")
     elif not value.new_mac:
         passed_option.error("Enter the new mac,use --help for further details")
